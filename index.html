@@ -258,6 +258,19 @@
         </div>
     </div>
     
+    <div class="container features">
+        <h2 class="features-heading">Our <span>gyms</span></h2>
+        <div class="features-slider">
+            <div class="features-block"><img src="img/gym1.jpg" alt="img-gym"></div>
+            <div class="features-block"><img src="img/gym2.jpg" alt="img-traineer"></div>
+            <div class="features-block"><img src="img/gym3.jpg" alt="img-traineer"></div>
+            <div class="features-block"><img src="img/gym4.jpg" alt="img-traineer"></div>
+            <div class="features-block"><img src="img/gym5.jpg" alt="img-traineer"></div>
+            <div class="features-block"><img src="img/gym6.jpg" alt="img-traineer"></div>
+            <div class="features-block"><img src="img/gym7.jpg" alt="img-traineer"></div>
+        </div>
+    </div>
+    
     
     <div class="container-fluid media-section">
         <div class="row">
@@ -340,5 +353,25 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="slick/slick.min.js"></script>
+        
+        <script>
+        $(document).ready(function(){
+          $('.features-slider').slick({
+              infinite: true,
+              autoplay:true,
+              autoplaySpeed:2500,
+              dots:true,
+              fade:true,
+              pauseOnHover:false,
+          });
+        });
+				
+        </script>
+
 </body>
 </html>
